@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.puzzlers.akseer.akseer.SignupActivity">
-<LinearLayout
+
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
@@ -13,7 +14,8 @@
         android:layout_height="match_parent"
         android:gravity="top|center"
         android:orientation="vertical"
-        android:layout_margin="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
@@ -39,11 +41,6 @@
                 app:srcCompat="@android:color/holo_blue_dark" />
 
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/black"
-            android:visibility="visible" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -69,6 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            
             >
 
             <EditText
@@ -79,7 +77,7 @@
                 android:imeActionId="6"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -91,7 +89,7 @@
                 android:imeActionId="6"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -101,6 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginTop="12dp"
             >
 
             <TextView
@@ -117,6 +116,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+            
 
             <EditText
                 android:id="@+id/email"
@@ -126,7 +126,7 @@
                 android:imeActionId="6"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -137,6 +137,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginTop="12dp"
             >
 
             <TextView
@@ -152,6 +153,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+          
             >
 
             <EditText
@@ -162,7 +164,7 @@
                 android:imeActionId="6"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -174,7 +176,7 @@
                 android:imeActionId="6"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -183,6 +185,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginTop="12dp"
             >
 
             <TextView
@@ -199,6 +202,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+            android:layout_marginTop="12dp"
 
             <EditText
                 android:id="@+id/password"
@@ -219,8 +223,8 @@
             android:id="@+id/btn_signup"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
             android:background="@android:drawable/dialog_holo_dark_frame"
             android:backgroundTint="@color/yellow"
             android:padding="12dp"
