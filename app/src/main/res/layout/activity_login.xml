@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1d3257"
+    tools:context="com.puzzlers.akseer.akseer.LoginActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="125sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10sp"
+            app:srcCompat="@drawable/logo" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5sp"
+            android:background="@color/white"
+            android:onClick="openMainActivity"
+            android:padding="10sp"
+            android:text="Sign in" />
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:layout_margin="15sp"
+            android:background="@color/yellow"
+            android:onClick="openSignUpActivity"
+            android:text="Sign Up" />
+    </LinearLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</FrameLayout>
