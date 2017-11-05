@@ -6,6 +6,9 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.hardware.Camera;
+import android.hardware.camera2.*;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -30,6 +33,8 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import  android.hardware.Camera.*;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,6 +78,17 @@ public class SignIn extends Activity {
 
     public void openMainActivity(View view){
         startActivity(new Intent(SignIn.this, MainActivity.class));
+     /*   Camera camera = Camera.open();
+        Parameters mCameraDevPara = camera.getParameters();
+        mCameraDevPara.setColorEffect(android.hardware.Camera.Parameters.EFFECT_MONO);
+        camera.setParameters(mCameraDevPara);*//**//*
+        camera.startPreview();
+        camera.release();
+*/
+        /*Camera camera = Camera.open();
+        Parameters mCameraDevPara = camera.getParameters();
+        mCameraDevPara.setColorEffect(android.hardware.Camera.Parameters.EFFECT_MONO);
+        camera.setParameters(mCameraDevPara);*/
 
 
     }

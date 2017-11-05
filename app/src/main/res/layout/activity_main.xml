@@ -31,7 +31,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/navigation" />
 
-    <GridLayout
+    <!-- <GridLayout
+        android:id="@+id/newsGrid"
         android:layout_width="395dp"
         android:layout_height="495dp"
         tools:layout_editor_absoluteX="8dp"
@@ -55,6 +56,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Name" />
+
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -131,6 +133,78 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Name" />
+    </GridLayout>-->
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/yellow"
+        android:backgroundTintMode="src_atop"
+        />
+
+    <GridLayout
+        android:id="@+id/marketGrid"
+        android:layout_width="395dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="54dp">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="53dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="53dp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="53dp" />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="53dp" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="53dp" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="53dp" />
+
     </GridLayout>
+
+
 
 </android.support.constraint.ConstraintLayout>
